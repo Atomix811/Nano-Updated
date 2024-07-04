@@ -506,12 +506,12 @@ void Hooking::FindPatterns()
 	auto p_nativeReg = pattern("76 32 48 8B 53 40 48 8D 0D");
 	auto p_gameState = pattern("83 3D ? ? ? ? ? 75 17 8B 43 20 25");
 	auto p_getEventData = pattern("48 85 C0 74 14 4C 8B 10");
-	auto p_getLabelText = pattern("48 89 5C 24 ? 57 48 83 EC 20 48 8B DA 48 8B F9 48 85 D2 75 44 E8"); //updated patterns by blade :)
+	auto p_getLabelText = pattern("48 89 5C 24 ? 57 48 83 EC 20 48 8B DA 48 8B F9 48 85 D2 75 44 E8"); 
 	auto p_worldPtr = pattern("48 8B 05 ? ? ? ? 45 ? ? ? ? 48 8B 48 08 48 85 C9 74 07");
 	auto p_globaldPtr = pattern("4C 8D 05 ? ? ? ? 4D 8B 08 4D 85 C9 74 11");
 	auto p_modelSpawnBypass = pattern("48 8B C8 FF 52 30 84 C0 74 05 48");
 	auto p_nativeReturnAddress = pattern("FF E3");
-	auto p_ActiveScriptThread = pattern("E8 ? ? ? ? 48 8B 88 ? 01 00 00 ? 02");
+	auto p_ActiveScriptThread = pattern("E8 ? ? ? ? 48 8B 88 ? 01 00 00 ? 02"); //UPDATED
 
 
 	Log::Msg("[ Getting Hooking Start Up <!> PTR ]");
